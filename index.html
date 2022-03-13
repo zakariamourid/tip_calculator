@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="title">
+      SPLI <br />
+      TTER
+    </div>
+    <div class="container">
+      <div class="left-side">
+        <div class="input-box">
+          <label for="bill">Bill <br /> </label>
+          <div class="input-symbol">
+            <input type="number" name="bill" id="bill" class="input-style" />
+            <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+          </div>
+        </div>
+        <div class="select-tip">
+          <span>Select Tip % <br /> </span>
+          <div class="wrapper">
+            <div class="box active">5%</div>
+            <div class="box">10%</div>
+            <div class="box">15%</div>
+            <div class="box">25%</div>
+            <div class="box">50%</div>
+            <div class="box custom">Custom</div>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="number-of-people">Number-of-people <br /> </label>
+          <div class="input-symbol">
+            <input
+              type="number"
+              name="people"
+              id="people"
+              class="input-style"
+            />
+            <span class="icon"><i class="fas fa-user"></i></span>
+          </div>
+        </div>
+        <!-- <label for="Number-of-people">Number-of-people <br /></label
+        ><span
+          ><input
+            type="number"
+            name="Number-of-people"
+            id="Number-of-people"
+            class="input-style"
+        /></span> -->
+      </div>
+      <div class="right-side">
+        <div class="tip-amount">
+          <div class="rigth-side-text">
+            Tip amount <br />
+            <span>/ person</span>
+          </div>
+          <div class="tip" id="tip">$4.27</div>
+        </div>
+        <div class="tip-amount">
+          <div class="rigth-side-text">
+            Total <br />
+            <span>/ person</span>
+          </div>
+          <div class="tip tip-total" id="total-tip">$32.79</div>
+        </div>
+        <div class="btn-reset">RESET</div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
