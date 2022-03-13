@@ -26,7 +26,7 @@ body {
   align-items: center;
   font-family: "Space Mono", monospace;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--Light-grayish-cyan);
 }
 .title {
@@ -61,14 +61,7 @@ input:focus,
 textarea:focus {
   outline-color: var(--very-dark-cyan);
 }
-/* .input-symbol-dollar:before {
-  position: absolute;
-  top: -70%;
-  content: "$";
-  color: grey;
-  left: 15px;
-  font-size: 2rem;
-} */
+
 .container {
   border-radius: 12px;
   background-color: var(--White);
@@ -161,4 +154,13 @@ label {
 }
 .btn-reset:hover {
   background-color: rgb(12, 104, 109);
+}
+@media (max-width: 1199px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    display: none;
+  }
 }
