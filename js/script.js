@@ -13,14 +13,17 @@ function removeActive() {
 function updateValue() {
   const tip_percent = document.querySelector(".box.active");
   var tip_amount = (parseInt(tip_percent.textContent) * bill.value) / 100;
-  tip_amount = tip_amount.toFixed(2);
+
   var people_number = people.value;
-  tip.textContent = "$" + tip_amount;
+
   if (people_number == "") {
     people_number = 1;
   }
-  var total_tip_amount = tip_amount * parseInt(people_number);
+  var total_tip_amount = tip_amount;
   total_tip_amount = total_tip_amount.toFixed(2);
+  tip_amount = total_tip_amount / parseInt(people_number);
+  tip_amount = tip_amount.toFixed(2);
+  tip.textContent = "$" + tip_amount;
   total_tip.textContent = "$" + total_tip_amount;
 }
 bill.addEventListener("input", updateValue);
